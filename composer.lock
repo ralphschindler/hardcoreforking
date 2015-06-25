@@ -1,0 +1,151 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "c36282718c4237f53c093c9167c12f8b",
+    "packages": [
+        {
+            "name": "distill/db",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/distillphp/distill-db.git",
+                "reference": "cc52a996b9dd913a22ff2bc2248da821c5681bd8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/distillphp/distill-db/zipball/cc52a996b9dd913a22ff2bc2248da821c5681bd8",
+                "reference": "cc52a996b9dd913a22ff2bc2248da821c5681bd8",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7@dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Distill\\Db\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "UNLICENSE"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Schindler",
+                    "email": "ralph@ralphschindler.com"
+                }
+            ],
+            "description": "Database",
+            "time": "2015-06-19 19:44:20"
+        },
+        {
+            "name": "distill/distill",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/distillphp/distill.git",
+                "reference": "9c20f6c414ea4b7e48ab60613e0bbe4be60b9bbb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/distillphp/distill/zipball/9c20f6c414ea4b7e48ab60613e0bbe4be60b9bbb",
+                "reference": "9c20f6c414ea4b7e48ab60613e0bbe4be60b9bbb",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Distill\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "UNLICENSE"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Schindler",
+                    "email": "ralph@ralphschindler.com",
+                    "role": "developer"
+                }
+            ],
+            "description": "PHP Application Framework",
+            "time": "2015-05-29 15:39:44"
+        },
+        {
+            "name": "psecio/jwt",
+            "version": "1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/psecio/jwt.git",
+                "reference": "14dc72ba37b28fef259f3b925451136d10629122"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/psecio/jwt/zipball/14dc72ba37b28fef259f3b925451136d10629122",
+                "reference": "14dc72ba37b28fef259f3b925451136d10629122",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psecio": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Cornutt",
+                    "email": "ccornutt@phpdeveloper.org",
+                    "homepage": "http://www.phpdeveloper.org/"
+                }
+            ],
+            "description": "A JWT (JSON Web Token) Encoding & Decoding library",
+            "homepage": "https://github.com/psecio/jwt.git",
+            "keywords": [
+                "json",
+                "jwt",
+                "token",
+                "web"
+            ],
+            "time": "2015-05-13 15:54:36"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "distill/distill": 20,
+        "distill/db": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

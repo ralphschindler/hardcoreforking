@@ -1,0 +1,65 @@
+{
+  "private": true,
+  "name": "hardcoreforking",
+  "version": "0.0.1",
+  "description": "HardcoreForking.org",
+  "repository": "https://github.com/ralphschindler/hardcoreforking",
+  "author": "ralph@ralphschindler.com",
+  "license": "UNLICENSE",
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "optional": [
+            "es7.classProperties"
+          ]
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "build": "npm run build-js && npm run build-css",
+    "watch": "npm run watch-css & npm run watch-js & npm run serve",
+    "serve": "php -S localhost:8000 -t public/",
+    "build-js": "browserify --extension=.js public/js/app.js | uglifyjs > public/js/build.js",
+    "watch-js": "watchify --extension=.js public/js/app.js -o public/js/build.js --debug --verbose",
+    "build-css": "lessc --include-path=public/css/:node_modules/ public/css/main.less public/css/build.css",
+    "watch-css": "catw -c 'lessc --include-path=public/css/:node_modules/ -' 'public/css/main.less' -o public/css/build.css -v",
+    "build-assets": "cp node_modules/font-awesome/fonts/* public/fonts/"
+  },
+  "devDependencies": {
+    "babelify": "*",
+    "bootstrap": "^3.0.0",
+    "browserify": "*",
+    "catw": "*",
+    "counterpart": "^0.16.7",
+    "flux": "*",
+    "font-awesome": "*",
+    "jwt-decode": "*",
+    "keymirror": "*",
+    "less": "*",
+    "lodash": "*",
+    "object-assign": "*",
+    "react": "*",
+    "react-ago-component": "^0.6.1",
+    "react-infinite": "^0.4.0",
+    "react-intl": "^1.2.0",
+    "react-router": "*",
+    "reactify": "*",
+    "superagent": "*",
+    "uglify": "*",
+    "uglify-js": "*",
+    "url-template": "^2.0.6",
+    "watchify": "*"
+  },
+  "browser": {
+    "underscore": "lodash/dist/lodash.js"
+  },
+  "aliasify": {
+    "aliases": {
+      "underscore": "lodash"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<?php
+
+$devConfig = [
+    'debug' => true,
+    'monolog.logfile' => __DIR__.'/../var/logs/log.txt',
+    'github_auth' => [
+        'client_id' => '',
+        'client_secret' => '',
+        'redirect_uri' => ''
+    ]
+];
+
+return array_replace_recursive(include __DIR__ . '/production.php', $devConfig);

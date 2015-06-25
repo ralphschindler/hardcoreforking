@@ -1,0 +1,25 @@
+{
+    "name": "distill/skeleton",
+    "description": "Skeleton Application For Distill",
+    "license": "UNLICENSE",
+    "authors": [
+        {
+            "name": "Ralph Schindler",
+            "email": "ralph@ralphschindler.com",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "distill/distill": "1.*@dev",
+        "distill/db": "dev-master",
+        "psecio/jwt": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {"HardcoreForking\\": "src/"}
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
